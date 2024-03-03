@@ -62,19 +62,15 @@
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2>Pembahasan Latihan Soal Kubus</h2>
-                    <button type="button" id="kunci_1" class="btn btn-primary mb-4">
-                        Lihat Pembahasan
-                    </button>
-                    <form>
-
+                    <form class="mb-3">
                         <div class="form-group">
                             <label for="exampleInputPassword1">Masukkan Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="name" class="form-control" id="Password1" placeholder="Password">
                         </div>
-
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-success" id="kubus">Lihat Pembahasan</button>
                     </form>
-                    <p class="text-justify d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos provident unde illo veritatis velit, ullam, nemo similique nihil nobis sequi natus delectus, nostrum fugiat cupiditate repellendus cumque quos vitae. Voluptas possimus
+                    <p class="text-justify d-none text-danger" id="salah1">Password salah! Ulangi.</p>
+                    <p class="text-justify d-none" id="jawaban1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos provident unde illo veritatis velit, ullam, nemo similique nihil nobis sequi natus delectus, nostrum fugiat cupiditate repellendus cumque quos vitae. Voluptas possimus
                         suscipit in esse. Assumenda et at earum velit sapiente, reiciendis dicta excepturi doloribus beatae porro neque, cum voluptatum? Dolorum obcaecati aspernatur, tenetur repellat praesentium necessitatibus iusto nulla expedita ipsa
                         dicta, atque veritatis odio commodi veniam fugiat tempore dolor perferendis odit qui placeat maiores. Cumque quas eius unde mollitia officia soluta! Dolor eaque tempore modi maxime impedit laboriosam, aut nihil ipsam dolorem distinctio
                         qui consequatur repellendus totam amet, asperiores sed! </p>
@@ -118,10 +114,18 @@
 
     <!-- Vendor JS Files -->
     <script>
-        const kunci1 = document.querySelector('kunci_1');
-        kunci1.addEventListener('click', () => {
-            if (hasil_1 != null) {
-                kunci1.href = 'kubus.html'
+        const kunci1 = document.querySelector('#kubus');
+        let hasil = document.querySelector('#Password1').value;
+        kunci1.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log(hasil)
+            if (hasil == 'kubus') {
+                console.log(hasil)
+                document.querySelector('#jawaban1').classList.add('d-block')
+                document.querySelector('#salah1').classList.remove('d-block')
+            } else {
+                document.querySelector('#salah1').classList.add('d-block')
+                document.querySelector('#jawaban1').classList.remove('d-block')
             }
         });
     </script>
