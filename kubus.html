@@ -65,7 +65,16 @@
                     <button type="button" id="kunci_1" class="btn btn-primary mb-4">
                         Lihat Pembahasan
                     </button>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos provident unde illo veritatis velit, ullam, nemo similique nihil nobis sequi natus delectus, nostrum fugiat cupiditate repellendus cumque quos vitae. Voluptas possimus
+                    <form>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Masukkan Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <p class="text-justify d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos provident unde illo veritatis velit, ullam, nemo similique nihil nobis sequi natus delectus, nostrum fugiat cupiditate repellendus cumque quos vitae. Voluptas possimus
                         suscipit in esse. Assumenda et at earum velit sapiente, reiciendis dicta excepturi doloribus beatae porro neque, cum voluptatum? Dolorum obcaecati aspernatur, tenetur repellat praesentium necessitatibus iusto nulla expedita ipsa
                         dicta, atque veritatis odio commodi veniam fugiat tempore dolor perferendis odit qui placeat maiores. Cumque quas eius unde mollitia officia soluta! Dolor eaque tempore modi maxime impedit laboriosam, aut nihil ipsam dolorem distinctio
                         qui consequatur repellendus totam amet, asperiores sed! </p>
@@ -110,6 +119,11 @@
     <!-- Vendor JS Files -->
     <script>
         const kunci1 = document.querySelector('kunci_1');
+        kunci1.addEventListener('click', () => {
+            if (hasil_1 != null) {
+                kunci1.href = 'kubus.html'
+            }
+        });
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
