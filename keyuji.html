@@ -36,8 +36,8 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link" href="index.html">Beranda</a></li>
-                    <li><a class="nav-link active" href="materi.html">Materi</a></li>
-                    <li><a class="nav-link" href="evaluasi.html">Uji Kompetensi</a></li>
+                    <li><a class="nav-link " href="materi.html">Materi</a></li>
+                    <li><a class="nav-link active" href="evaluasi.html">Uji Kompetensi</a></li>
                     <li><a class="nav-link " href="dapus.html">Daftar Pustaka</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle "></i>
@@ -53,7 +53,7 @@
             <div class="container">
                 <ol>
                     <li><a href="index.html">Beranda</a></li>
-                    <li>Kunci Jawaban Prisma</li>
+                    <li>Kunci Jawaban Uji Kompetensi</li>
                 </ol>
             </div>
         </section>
@@ -62,19 +62,19 @@
         <section id="team" class="team section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
-                    <h2>Pembahasan Latihan Soal Prisma</h2>
+                    <h2>Pembahasan Uji Kompetensi</h2>
                     <form class="mb-3">
                         <div class="form-group">
                             <label for="Password1">Masukkan Password</label>
                             <input type="name" class="form-control" id="Password1" placeholder="Password">
                         </div>
-                        <button type="submit" class="btn btn-success" id="prisma">Lihat Pembahasan</button>
+                        <button type="submit" class="btn btn-success" id="uji">Lihat Pembahasan</button>
                     </form>
                     <p class="text-justify d-none text-danger" id="salah1">Password salah! Ulangi.</p>
 
                     <ul class="list-group d-none" id="jawaban1">
                         <p>
-                            Silahkan kalian unduh dan pelajari pembahasan soal latihan prisma di bawah ini. Pastikan kalian sudah berusaha mengerjakan soal latihan terlebih dahulu!<br>
+                            Silahkan kalian unduh dan pelajari pembahasan soal uji Kompetensi di bawah ini. Pastikan kalian sudah berusaha mengerjakan soal terlebih dahulu!<br>
                             <a href="LATIHAN 3 _ PRISMA.pdf" class="btn btn-warning mt-2 p-2 text-white font-weight-bold p-2 mb-3">Unduh</a>
                         </p>
                         <embed src="LATIHAN 3 _ PRISMA.pdf" type="application/pdf" width="100%" height="600px" />
@@ -120,12 +120,12 @@
 
     <!-- Vendor JS Files -->
     <script>
-        const kunci1 = document.querySelector('#prisma');
+        const kunci1 = document.querySelector('#uji');
 
         kunci1.addEventListener('click', (e) => {
             e.preventDefault();
 
-            if (document.querySelector('#Password1').value == 'prisma') {
+            if (document.querySelector('#Password1').value == 'uji') {
 
                 document.querySelector('#jawaban1').classList.add('d-block')
                 document.querySelector('#salah1').classList.remove('d-block')
