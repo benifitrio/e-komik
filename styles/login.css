@@ -9,10 +9,10 @@
 }
 
 #neonShadow {
-    width: 15em;
-    height: 4em;
+    width: 16em;
+    height: 3em;
     position: absolute;
-    top: 44em;
+    top: 8.4em;
     border: none;
     border-radius: 3em;
     transition: 0.3s;
