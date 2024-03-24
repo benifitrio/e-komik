@@ -27,6 +27,12 @@
     }
 }
 
+@media screen and (max-width: 390px) {
+    #neonShadow {
+        top: 10em;
+    }
+}
+
 a#bg-login {
     display: flex;
     align-items: center;
